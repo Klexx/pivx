@@ -1,10 +1,13 @@
 # pivx
+
 Dockerized pivx
 
 # Examples
 
-docker -p 51472:51472 -v /host/pivx/dir:/home/pivx/.pivx --name pivx dok3r/pivx
+Start the container:
 
-docker exec -it pivx /bin/bash
+    docker -p 51472:51472 -v /host/pivx/dir:/home/pivx/.pivx --name pivx klexx/pivx
+    
+Access shell / bash:
 
-
+    docker exec -it pivx /bin/bash
